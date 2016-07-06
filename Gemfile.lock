@@ -39,6 +39,3 @@ DEPENDENCIES
   dotenv
   jira-ruby
   octokit
-
-BUNDLED WITH
-   1.11.2
