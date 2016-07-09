@@ -40,7 +40,9 @@ def jira_child_issues(jira_issues)
 end
 
 def jira_issue_ids_in_commits(commits)
-  commits.map { |commit| commit.commit.message.scan(/[A-Z\d]+-\d+/) }.flatten.uniq
+  commits.map{ |commit|
+    commit.commit.message.scan(/[A-Z\d]+-\d+/)
+  }.flatten.uniq
 end
 
 def jira_issues_by_ids(jira_issue_ids)
